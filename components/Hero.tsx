@@ -2,7 +2,8 @@ import React from "react"
 import { useTheme } from "next-themes"
 import { ArrowRight, Globe } from "lucide-react"
 import { Button } from "./ui/button"
-import Image from "next/image"
+
+
 
 const Hero = () => {
   const { theme } = useTheme()
