@@ -3,8 +3,8 @@ import { generateMetadata as getPageMetadata } from "@/config/meta";
 import ReactLenis from 'lenis/react';
 import { ViewTransitions } from 'next-view-transitions';
 import './globals.css';
+import UmamiAnalytics from '@/components/analytics/UmamiAnalytics';
 import Providers from '@/components/common/Providers';
-// import UmamiAnalytics from '@/components/analytics/UmamiAnalytics';
 
 
 export const metadata = getPageMetadata('/');
@@ -22,7 +22,7 @@ export default function RootLayout({
           <ReactLenis root>
             {children}
             <ChatBubble />
-            {/* <UmamiAnalytics /> */}
+            <UmamiAnalytics />
           </ReactLenis>
           </Providers>
         </body>
