@@ -3,14 +3,14 @@
 import { BsChatRightDots } from "react-icons/bs";
 import { IoIosSend } from "react-icons/io";
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Button } from '@/components/ui/button';
+
 import {
   ExpandableChat,
   ExpandableChatBody,
   ExpandableChatFooter,
   ExpandableChatHeader,
 } from '@/components/ui/expandable-chat'
-import { Input } from '@/components/ui/input';
+
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { chatSuggestions } from '@/config/ChatPrompt';
 
@@ -18,7 +18,8 @@ import { cn } from '@/lib/utils';
 import React, { useEffect, useRef, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { about } from "@/config/About";
-
+import Input from "../ui/input";
+import { Button } from "../ui/button";
 
 
 interface Message {

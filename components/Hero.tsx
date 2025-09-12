@@ -4,15 +4,15 @@ import { ArrowRight, Globe } from "lucide-react"
 import { Button } from "./ui/button"
 
 
+export default function Hero() {
 
-const Hero = () => {
   const { theme } = useTheme()
 
   return (
    <section
-      className="relative py-20 lg:py-32 overflow-hidden"
+      className="relative py-20 lg:py-32 h-160 overflow-hidden"
       style={{
-        backgroundImage: `url(${theme === "dark" ? "/night.jpeg" : "/day.jpeg"})`,
+        backgroundImage: `url(${theme === "dark" ? "/night.jpg" : "/day.jpg"})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -49,4 +49,3 @@ const Hero = () => {
   )
 }
 
-export default Hero
